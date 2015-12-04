@@ -27,10 +27,10 @@ gem 'bootstrap-sass'
 gem 'devise'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'faker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'figaro'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec-rails', '~> 3.0'
