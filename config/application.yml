@@ -9,3 +9,5 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+SMTP LOGIN: postmaster@app7bef40cb07b847ab82128f8bb0ff56d6.mailgun.org
+STMP PASSWORD: 5424aab28042e3d73a1ac1d84c3c493f
