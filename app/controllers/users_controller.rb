@@ -1,6 +1,12 @@
 class UsersController < ApplicationController
   # POST /users
   # POST /users.json
+
+  def show
+    @user = User.find(params[:id])
+    @wikis = @user.wikis.visible_to(current_user)
+  end
+  
   def create
     @user = User.new(params[:user])
 
@@ -17,6 +23,4 @@ class UsersController < ApplicationController
       end
     end
   end
-end
-
 end
