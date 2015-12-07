@@ -1,21 +1,20 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "variables";
 
 .user-info {
   margin-top: 9px;
 }
 
 .header {
-  text-align:center;
+  text-align: center;
   margin: 0px;
   background-color: #45454f;
   margin: 0;
   padding: 100px 0px 250px 0;
 
   h1 {
-    font-family: $dosis;
+    font-family: cursive;
     color: #ffffff;
     margin: 0;
     padding: 20px;
@@ -31,8 +30,8 @@
   h3 {
     margin: 0;
     padding: 50px 0px;
-    font-family: $dosis;
-    font-weight: $bold;
+    font-family: cursive;
+    font-weight: bold;
 
     small {
       color: #000000;
@@ -85,6 +84,6 @@
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
-  background-color: $blue-ish;
+  background-color: blue;
   border: 0px;
 }

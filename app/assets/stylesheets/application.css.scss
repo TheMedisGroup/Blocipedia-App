@@ -15,10 +15,7 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "variables";
-@import "welcome";
-@import url(/fonts.googleapis.com/css?family=Dosis:400);
-@import url(/fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 
 // Overrides
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus  {
@@ -45,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $dosis;
+  font-family: cursive;
 }
 
 .inner-wrapper {
@@ -59,7 +56,7 @@ h6 {
 }
 
 .custom-nav-styles {
-  background-color: $blue-ish;
+  background-color: blue;
   font-size: 0.9em;
   margin: 0;
   padding: 5px;
@@ -70,13 +67,13 @@ h6 {
     padding: 20px 0;
 
     a {
-      color: $white;
-      font-family: $open-sans, sans-serif;
+      color: white;
+      font-family: sans-serif;
     }
   }
 
   .user-info {
-    color: $white;
+    color: white;
   }
 }
 
@@ -86,7 +83,7 @@ h6 {
   padding: 30px 0;
 
   footer {
-    color: $white;
+    color: white;
     padding: 0;
     text-align: center;
 
