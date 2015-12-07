@@ -1,3 +1,90 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+
+.user-info {
+  margin-top: 9px;
+}
+
+.header {
+  text-align:center;
+  margin: 0px;
+  background-color: #45454f;
+  margin: 0;
+  padding: 100px 0px 250px 0;
+
+  h1 {
+    font-family: $dosis;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+.standard-features, .premium-features {
+  text-align: center;
+  margin-top: -151px;
+  margin-right: 0px;
+  padding: 0px;
+
+  h3 {
+    margin: 0;
+    padding: 50px 0px;
+    font-family: $dosis;
+    font-weight: $bold;
+
+    small {
+      color: #000000;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 10px;
+    font-size: .9em;
+  }
+
+  span {
+    color: transparent;
+  }
+
+  .blue-button {
+    margin-bottom: 20px;
+  }
+}
+
+.standard-features {
+  border-right: 1px solid #DDE1E8;
+  box-shadow: -4px 4px 10px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -4px 4px 10px 3px rgba(0,0,0,0.25);
+  -moz-box-shadow: -4px 4px 10px 3px rgba(0,0,0,0.25);
+  h3 {
+    background-color: #ECF0F6;
+    color: #98A3B3;
+  }
+}
+
+.premium-features {
+  margin: -151px 0 0 0;
+  border-left: 1px solid #DDE1E8;
+  box-shadow: 4px 4px 10px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 4px 4px 10px 3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 4px 4px 10px 3px rgba(0,0,0,0.25);
+  h3 {
+    background-color: #eb5047;
+    color: $white;
+  }
+}
+
+.pricing {
+  padding: 0 0 150px 0;
+}
+
+.blue-button {
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  background-color: $blue-ish;
+  border: 0px;
+}
