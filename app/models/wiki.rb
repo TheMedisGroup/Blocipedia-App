@@ -5,7 +5,6 @@
 #  id         :integer          not null, primary key
 #  title      :string
 #  body       :text
-#  private    :boolean
 #  user_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
@@ -15,5 +14,6 @@
 class Wiki < ActiveRecord::Base
   belongs_to :user
   has_many :collaborators
-  scope :visible_to, ->(user, viewable = true) { user ? all : where(public: viewable) }
+  has_many :users, through: :collaborators
+  scope :visible_to, ->(user) { user ? all : where(public: true ) }
 end

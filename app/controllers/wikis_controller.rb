@@ -35,7 +35,7 @@ class WikisController < ApplicationController
     authorize @wiki
     if @wiki.update_attributes(wiki_params)
       flash[:notice] = "Wiki was successfully updated."
-      redirect_to wiki
+      redirect_to @wiki
     else
       flash[:notice] = "There was an error editing the wiki."
       redirect_to :edit

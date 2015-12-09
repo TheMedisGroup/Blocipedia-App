@@ -21,6 +21,7 @@
 #  updated_at             :datetime         not null
 #  customer_id            :string
 #  name                   :string
+#  role                   :integer
 #
 
 require 'rails_helper'
