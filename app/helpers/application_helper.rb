@@ -4,7 +4,7 @@ module ApplicationHelper
     if current_user.premium?
       content_tag :p, "You are a premium user."
     else
-      context_tag :p, "You are a standard user."
+      content_tag :p, "You are a standard user."
     end
   end
 
@@ -14,5 +14,4 @@ module ApplicationHelper
     redcarpet = Redcarpet::Markdown.new(renderer, extensions)
     (redcarpet.render markdown).html_safe
   end
-
 end

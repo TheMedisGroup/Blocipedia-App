@@ -2,7 +2,7 @@
   <%= button_to 'Downgrade', downgrade_path, method: :delete, class: 'btn' %>
 <% else %>
   <%= form_tag subscriptions_path do %>
-    <h4>Click the button!</h4>
+    <h4>Upgrade to a premium user & make all your friends jealous.</h4>
     <script class="stripe-button" src="https://checkout.stripe.com/checkout.js"
             data-key="<%= stripe_btn_data[:key] %>"
             data-amount=<%= stripe_btn_data[:amount] %>

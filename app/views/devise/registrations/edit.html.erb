@@ -50,10 +50,10 @@
     <%= render partial: 'shared/premium_button', locals: {stripe_btn_data: @stripe_btn_data} %>
 
 
-    <h3>Cancel my account</h3>
+    <h3>Want to cancel your account</h3>
 
 
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete , class: 'btn btn-default' %></p>
+    <p>Over It? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete , class: 'btn btn-default' %></p>
 
   </div>
 </div>
