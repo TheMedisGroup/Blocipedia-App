@@ -1,5 +1,6 @@
 class SubscriptionsController < ApplicationController
   require "stripe"
+  
   def new
     @amount = 15_00
     @stripe_btn_data = {
