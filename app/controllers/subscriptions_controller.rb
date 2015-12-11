@@ -1,10 +1,10 @@
 class SubscriptionsController < ApplicationController
-
+  require "stripe"
   def new
     @amount = 15_00
     @stripe_btn_data = {
       key: "#{ Rails.configuration.stripe [:publishable_key] }",
-      description: "BigMoney Membership - #{current_user.name}",
+      description: "Premium Membership - #{current_user.name}",
       amount: @amount
     }
   end

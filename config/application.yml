@@ -3,8 +3,7 @@
 # pusher_app_id: "2954"
 # pusher_key: 7381a978f7dd7f9a1117
 # pusher_secret: abdc3b896a0ffb85d373
-stripe_api_key: sk_test_W3eCXVnHzn8vMWBRpcQoQQbD
-stripe_publishable_key: pk_test_kh5UpNIwWZvUDgLL50cfxZGt
+
 
 MAILGUN_SMTP_LOGIN: postmaster@app7bef40cb07b847ab82128f8bb0ff56d6.mailgun.org
 MAILGUN_SMTP_PASSWORD: 5424aab28042e3d73a1ac1d84c3c493f
@@ -12,3 +11,5 @@ MAILGUN_SMTP_PASSWORD: 5424aab28042e3d73a1ac1d84c3c493f
 production:
   stripe_api_key: sk_live_1SzfXjia2mxK3ZVAptaDKJzO
   stripe_publishable_key: pk_live_CbWOCiip7gY1PrWLufSnTKBx
+  stripe_api_key: sk_test_W3eCXVnHzn8vMWBRpcQoQQbD
+  stripe_publishable_key: pk_test_kh5UpNIwWZvUDgLL50cfxZGt
