@@ -1,2 +1,8 @@
-STMP LOGIN:
-STMP PASSWORD:
+MAILGUN_SMTP_LOGIN: 
+MAILGUN_SMTP_PASSWORD:
+
+production:
+  stripe_api_key:
+  stripe_publishable_key:
+  stripe_api_key:
+  stripe_publishable_key:
