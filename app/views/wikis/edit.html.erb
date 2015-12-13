@@ -19,6 +19,13 @@
         <div class='form-group'>
           <%= f.submit "Save", class: 'btn btn-success' %>
         </div>
+
+        <div class='form-group'>
+          <%=  form_for :collaborator do |f| %>
+            <%= f.select :collaborators, options_from_collection_for_select(@users, :id, :name) %>
+            <%= f.submit "Add Collaborator", class: 'btn btn-success' %>
+          <% end %>
+        </div>
       <% end %>
       </div>
     <% end %>
