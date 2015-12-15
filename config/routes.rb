@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "users/registrations" }
   resources :users, only: [:show]
 
-  resources :wikis
+  resources :wikis do
+    resources :collaborators
+  end
+
 
   resources :subscriptions, only: [:new, :create]
   delete '/downgrade', to: 'subscriptions#downgrade'
