@@ -1,15 +1,24 @@
 <div class='container filler-height'>
   <div class='inner-wrapper'>
     <h1><%= @wiki.title %></h1>
-    <%= public_or_private %>
+      <%= public_or_private %>
+      <% if policy(@wiki).make_private? %>
+        <% @wiki.collaborators.each do |c| %>
+          <div class='form-group'>
+            <h6>Collaborator:
+              <%=c.user.name %>
+            </h6>
+          </div>
+        <% end %>
+      <% end %>
     <p><%= markdown_to_html(@wiki.body) %></p>
     <% if policy(@wiki).edit? %>
       <%= link_to 'Edit Wiki', edit_wiki_path(@wiki.id), class: 'btn btn-success' %>
     <% end %>
     <% if policy(@wiki).destroy? %>
       <%= link_to 'Delete Wiki', @wiki, class: 'btn btn-danger',
-          method: :delete,
-          data: { confirm: 'Are you sure you want to delete your Wiki'} %>
+      method: :delete,
+      data: { confirm: 'Are you sure you want to delete your Wiki'} %>
     <% end %>
   </div>
 </div>

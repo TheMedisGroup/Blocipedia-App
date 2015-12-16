@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: cursive;
+  font-family: Lucida Sans Typewriter;
 }
 
 .inner-wrapper {
@@ -56,8 +56,9 @@ h6 {
 }
 
 .custom-nav-styles {
-  background-color: blue;
-  font-size: 0.9em;
+  background-color: #A00000;
+  font-family: Lucida Sans Typewriter;
+  font-size: 12px;
   margin: 0;
   padding: 5px;
 
@@ -68,7 +69,7 @@ h6 {
 
     a {
       color: white;
-      font-family: sans-serif;
+      font-family: Lucida Sans Typewriter;
     }
   }
 
