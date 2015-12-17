@@ -19,7 +19,7 @@ class WikiPolicy < ApplicationPolicy
       wikis = []
       if user.present? && user.admin?
         wikis = scope.all
-      elsif user.present? && user.premium?
+      elsif user.present? && user.premium? || user.collaborator?
         all_wikis = scope.all
         all_wikis.each do |wiki|
           if wiki.public? || wiki.user == user || wiki.users.include?(user)

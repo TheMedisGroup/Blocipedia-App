@@ -5,8 +5,8 @@
 # pusher_secret: abdc3b896a0ffb85d373
 
 
-MAILGUN_SMTP_LOGIN: posdtmaster@app7bef40cb07b847ab82128f8bb0ff56d6.mailgun.org
-MAILGUN_SMTP_PASSWORD: 5424aab28042e3d73a1ac1d84c3c493f
+MAILGUN_SMTP_LOGIN: postmaster@sandbox6849acf29f2548f288506a81b765160e.mailgun.org
+MAILGUN_SMTP_PASSWORD: b04001f734b94a208c5665e6a0b134c3
 
 production:
   STRIPE_SECRET_KEY: sk_live_1SzfXjia2mxK3ZVAptaDKJzO
