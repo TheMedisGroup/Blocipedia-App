@@ -1,12 +1,12 @@
 # Add configuration values here, as shown below.
 #
-# pusher_app_id: "2954"
-# pusher_key: 7381a978f7dd7f9a1117
-# pusher_secret: abdc3b896a0ffb85d373
+# pusher_app_id: 
+# pusher_key:
+# pusher_secret:
 
 
-MAILGUN_SMTP_LOGIN: postmaster@sandbox6849acf29f2548f288506a81b765160e.mailgun.org
-MAILGUN_SMTP_PASSWORD: b04001f734b94a208c5665e6a0b134c3
+MAILGUN_SMTP_LOGIN: 
+MAILGUN_SMTP_PASSWORD: 
 
 production:
   STRIPE_SECRET_KEY: 
